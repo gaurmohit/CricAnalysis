@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Winner</title>
+      </head>
+      <body background-image: "images/cric.jpg">
+        <div id="back">
+          <h2>The predicted country to win the 2019 worldcup is:</h2>
+          <p>
+            {{y_pred}}
+          </p>
+          </div>
+      </body>
+      <script>
+
+        $(function() {
+    
+    
+       var  dat= [];
+    
+       $.getJSON('home/mohit/Documents/clg-t/project/pro/world_cup/data_file.json', function(data) {
+           $.each(data.data, function(i, f) {
+              var y = "<p>" + f.da + "</p>"
+              $(y).appendTo("#userdata p");
+         });
+    
+       });
+    
+    });
+    </script>
+</html>
