@@ -109,10 +109,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mail.yahoo.com' # mail service smtp
-EMAIL_HOST_USER = 'testing.mypro@yahoo.com' # email id
-DEFAULT_FROM_EMAIL = 'testing.mypro@yahoo.com'
-EMAIL_HOST_PASSWORD = 'hmritm_sucks!' #password
+EMAIL_HOST = '<your_service_mail_smtp>' # mail service smtp
+EMAIL_HOST_USER = '<your_email_id>' # email id
+DEFAULT_FROM_EMAIL = '<email_in_header>'
+EMAIL_HOST_PASSWORD = '<password>' #password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
